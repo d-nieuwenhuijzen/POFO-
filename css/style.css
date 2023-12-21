@@ -1,0 +1,56 @@
+:root {
+    --light-green: #a9d18e;
+    --dark-green: #313f2c;
+    --dove: #2c9a43;
+    --butterfly: #669f49; 
+}
+
+header {
+    text-align: center;
+    background: var(--light-green);  
+    padding: 10px;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: var(--butterfly); 
+    background: var(--dark-green)
+}
+
+.name {
+    color: var(--dove);
+}
+
+.djeli-photo {
+    width: 500px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 150px;
+    border-radius: 75px;
+}
+
+.name {
+    position: absolute;
+    left: 725px;
+    bottom: 375px;
+}
+
+.intro {
+    position: absolute;
+    left: 675px;
+    bottom: 355px;
+}
+
+nav {
+    margin: 10px;
+}
+
+a {
+    padding: 100px;
+    text-align: center;
+}
+
+.home-main {
+    text-shadow: 3px 3px 3px #495f44;
+}
