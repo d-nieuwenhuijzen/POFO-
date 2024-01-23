@@ -71,9 +71,6 @@ dt {
 }
 
 .mondriaan-logo {
-    bottom: 405px;
-    right: 1000px;
-    position: absolute;
     width: 50px;
     border-radius: 10px;
 }
@@ -81,7 +78,4 @@ dt {
 .gmail-logo {
     width: 50px;
     border-radius: 10px;
-    position: absolute;
-    right: 910px;
-    bottom: 362px;
 }
