@@ -49,6 +49,8 @@ nav {
 a {
     padding: 100px;
     text-align: center;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .home-main {
