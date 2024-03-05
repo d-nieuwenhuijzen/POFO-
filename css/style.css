@@ -54,6 +54,11 @@ a {
     text-decoration: inherit;
 }
 
+a:hover {
+    color: var(--dark-green);
+    text-shadow: 3px 3px 3px var(--shadow);
+}
+
 
 .home-main {
     text-shadow: 3px 3px 3px var(--shadow);
