@@ -102,7 +102,13 @@ dt {
 }
 
 .jacky-article {
-    margin-top: -50px;
+    margin-top: -260px;
     margin-left: 1155px;
     width: 175px;
+}
+
+.me-2 {
+    margin-left: 850px;
+    width: 200px;
+    height: 200px;
 }
