@@ -93,3 +93,16 @@ dt {
     width: 50px;
     border-radius: 10px;
 }
+
+.me-article {
+    margin-top: 100px;
+    margin-left: 500px;
+    width: 200px;
+    height: 50px;
+}
+
+.jacky-article {
+    margin-top: -50px;
+    margin-left: 1155px;
+    width: 175px;
+}
