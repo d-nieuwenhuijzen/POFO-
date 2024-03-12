@@ -7,7 +7,6 @@
 }
 
 header {
-    text-align: center;
     background: var(--light-green);  
     padding: 10px;
 }
@@ -25,31 +24,10 @@ body {
 
 .djeli-photo {
     width: 500px;
-    position: absolute;
-    margin-top: 55px;
-    margin-left: 150px;
     border-radius: 75px;
 }
 
-.name {
-    position: absolute;
-    left: 725px;
-    bottom: 375px;
-}
-
-.intro {
-    position: absolute;
-    left: 675px;
-    bottom: 355px;
-}
-
-nav {
-    margin: 10px;
-}
-
 a {
-    padding: 100px;
-    text-align: center;
     color: inherit;
     text-decoration: inherit;
 }
@@ -66,17 +44,11 @@ a:hover {
 
 .contact-main {
     font-size: 25px;
-    text-align: center;
     text-shadow: 2px 2px 3px var(--shadow);
 }
 
 dt {
-    margin: 15px;
     text-shadow: 3px 3px 3px var(--shadow);
-}
-
-.contact-title {
-    margin-top: 150px;   
 }
 
 .mondriaan-logo {
@@ -94,48 +66,19 @@ dt {
     border-radius: 10px;
 }
 
-.me-article {
-    margin-top: 100px;
-    margin-left: 500px;
-    width: 200px;
-    height: 50px;
-}
-
-.jacky-article {
-    margin-top: -260px;
-    margin-left: 1155px;
-    width: 175px;
-}
-
-.me-2 {
-    margin-left: 850px;
-    width: 200px;
-    height: 200px;
-}
-
 .projects {
-    position: absolute;
-    top: 300px;
-    left: 800px;
     font-size: 30px;
-    gap: 300px;
 }
 
 .bkh {
-    position: absolute;
-    top: 20px;
     width: 300px;
     left: -5px;
 }
 
 .higher-lower-photo {
     width: 200px;
-    margin-left: 700px;
-    margin-top: 120px;
 }
 
 .tosti-photo {
-    margin-top: -40px;
-    margin-left: 700px;
     width: 200px;
 }
