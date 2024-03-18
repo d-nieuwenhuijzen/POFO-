@@ -1,30 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --light-green: #a9d18e;
     --dark-green: #313f2c;
     --dove: #2c9a43;
-    --butterfly: #669f49; 
+    --butterfly: #669f49;
     --shadow: #495f44;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        "hd"
+        "mn"
+        "mn"
+        "mn"
+        "mn"
+        "mn"
+    ;
+}
+
 header {
-    background: var(--light-green);  
+    background: var(--light-green);
     padding: 10px;
 }
 
+nav {
+    width: 100%;
+    padding-block: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: var(--butterfly); 
+    color: var(--butterfly);
     background: var(--dark-green)
-}
-
-.name {
-    color: var(--dove);
-}
-
-.djeli-photo {
-    width: 500px;
-    border-radius: 75px;
 }
 
 a {
@@ -37,11 +55,45 @@ a:hover {
     text-shadow: 3px 3px 3px var(--shadow);
 }
 
-
+ /* main page */
 .home-main {
+    grid-area: mn;
+    border: solid black 2px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        ". . . . . . . . . . . ."
+        ". . im . . . . . . . . ."
+        ". . im . . . . . . . . ."
+        ". . im . ar ar ar ar ar ar ar ."
+        ". . im . . . . . . . . ."
+        ". . . . . . . . . . . ."
+
+    ;
+}
+
+.name {
+    color: var(--dove);
+}
+
+.intro {
+    font-size: 30px;
+    grid-area: ar;
     text-shadow: 3px 3px 3px var(--shadow);
 }
 
+.djeli-photo {
+    border-radius: 75px;
+    width: 400px;
+    height: 400px;
+}
+
+.title {
+    grid-area: im;
+}
+
+/* contact page */
 .contact-main {
     font-size: 25px;
     text-shadow: 2px 2px 3px var(--shadow);
