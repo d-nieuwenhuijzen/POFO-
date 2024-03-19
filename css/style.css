@@ -12,21 +12,21 @@
     --shadow: #495f44;
 }
 
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: minmax(100px, auto);
-        grid-template-areas:
-            "hd"
-            "mn ct"
-            "mn ct"
-            "mn ct"
-            "mn ct"
-            "mn ct"
-        ;
-    }
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+        "hd"
+        "mn"
+        "mn"
+        "mn"
+        "mn"
+        "mn";
+}
 
 header {
+    grid-area: hd;
     background: var(--light-green);
     padding: 10px;
 }
@@ -45,6 +45,10 @@ body {
     background: var(--dark-green)
 }
 
+main {
+    grid-area: mn;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -57,18 +61,20 @@ a:hover {
 
 /* main page */
 .home-main {
-    grid-area: mn;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(50px, auto);
     grid-template-areas:
         ". . . . . . . . . . . ."
         ". . im . . . . . . . . ."
         ". . im . . . . . . . . ."
         ". . im . ar ar ar ar ar ar ar ."
+        ". . im . ar ar ar ar ar ar ar ."
+        ". . im . ar ar ar ar ar ar ar ."
+        ". . im . . . . . . . . ."
         ". . im . . . . . . . . ."
         ". . . . . . . . . . . ."
-
+        ". . . . . . . . . . . ."
     ;
 }
 
@@ -94,14 +100,17 @@ a:hover {
 
 /* contact page */
 .contact-main {
-    grid-area: ct;
     text-shadow: 2px 2px 3px var(--shadow);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(50px, auto);
     grid-template-areas:
-        ". . . . he he he . . . . ."
         ". . . . . . . . . . . ."
+        ". . . . he he he he he . . ."
+        ". . . . . . . . . . . ."
+        ". . . . us us us . . . . ."
+        ". . . . us us us . . . . ."
+        ". . . . us us us . . . . ."
         ". . . . us us us . . . . ."
         ". . . . . . . . . . . ."
         ". . . . . . . . . . . ."
@@ -110,6 +119,7 @@ a:hover {
 
 .contact-title {
     grid-area: he;
+    font-size: 30px;
 }
 
 .user-names {
@@ -135,19 +145,69 @@ a:hover {
     border-radius: 10px;
 }
 
-.projects {
+/* projects */
+.projects-main {
     font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . id . . . . . . ."
+        ". . . . id hl hl . . . . ."
+        ". . . . id . . . . . . ."
+        ". . . . id . . . . . . ."
+        ". . . . id     bkh bkh bkh . . . ."
+        ". . . . id . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+    ;
+}
+
+.hoger-lager {
+    grid-area: hl;
 }
 
 .bkh {
-    width: 300px;
-    left: -5px;
+    grid-area: bkh;
 }
 
-.higher-lower-photo {
-    width: 200px;
+.img-div {
+    grid-area: id;
 }
 
 .tosti-photo {
-    width: 200px;
+    width: 150px;
+    height: 150px;
+}
+
+.higher-lower-photo {
+    width: 150px;
+}
+
+/* about me */
+.about-main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        ". . . ma . . mf . . ja . ."
+        ". . . ma . . mf . . ja . ."
+        ". . . ma . . mf . . ja . ."
+        ". . . ma . . mf . . ja . ."
+        ". . . ma . . mf . . ja . .";
+}
+
+.me-article {
+    grid-area: ma;
+}
+
+.me-2 {
+    grid-area: mf;
+}
+
+.jacky-article {
+    grid-area: ja;
 }
