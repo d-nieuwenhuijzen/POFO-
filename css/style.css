@@ -193,11 +193,11 @@ a:hover {
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas:
+        ". . . ma . . . . . ja . ."
         ". . . ma . . mf . . ja . ."
         ". . . ma . . mf . . ja . ."
         ". . . ma . . mf . . ja . ."
-        ". . . ma . . mf . . ja . ."
-        ". . . ma . . mf . . ja . .";
+        ". . . ma . . . . . ja . .";
 }
 
 .me-article {
@@ -251,18 +251,25 @@ a:hover {
 
     /* contact responsive */
     .contact-main {
-        font-size: 15px;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-auto-rows: minmax(100px, auto);
         grid-template-areas:
             ". . . . ."
             ". he he he he"
-            ". us us us ."
-            ". us us us ."
-            ". us us us ."
+            " us us us . ."
+            " us us us . ."
+            " us us us . ."
             ". . . . ."
         ;
+    }
+
+    .contact-title {
+        font-size: 10px;
+    }
+
+    .user-names {
+        font-size: 5px;
     }
 
     /* projects responsive */
@@ -310,16 +317,4 @@ a:hover {
     .me-2 {
         width: 100px;
     }
-
-    /* .me-article {
-        grid-area: ma;
-    }
-    
-    .me-2 {
-        grid-area: mf;
-    }
-    
-    .jacky-article {
-        grid-area: ja;
-    } */
 }
